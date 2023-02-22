@@ -30,8 +30,7 @@ class LaporanController extends Controller
                     t.pengeluaran pengeluaran,
                     t.dompet_id dompet_id,
                     t.user_id user_id,
-                    t.terverifikasi terverifikasi,
-                    t.link link
+                    t.terverifikasi terverifikasi
                 FROM transaksis t inner join
                     (kategori_transaksis kt inner join
                     kategoris k on k.id = kt.kategori_id) on t.id = kt.transaksi_id
@@ -107,8 +106,7 @@ class LaporanController extends Controller
                     t.pengeluaran pengeluaran,
                     t.dompet_id dompet_id,
                     t.user_id user_id,
-                    t.terverifikasi terverifikasi,
-                    t.link link
+                    t.terverifikasi terverifikasi
                 FROM transaksis t inner join
                     (kategori_transaksis kt inner join
                     kategoris k on k.id = kt.kategori_id) on t.id = kt.transaksi_id
